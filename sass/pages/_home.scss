@@ -1,0 +1,60 @@
+.section-about {
+  background-color: $grey-light-1;
+  padding: 10rem;
+  padding-top: 15rem;
+  margin-top: -15vh;
+  padding-bottom: 20rem;
+  @include respond(tab-port) {
+    padding-bottom: 10rem;
+  }
+}
+
+.section-features {
+  padding: 20rem 10rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($primary-color-light, .8),
+    rgba($primary-color-dark, .8)
+  ), 
+    url(../img/nat-4.jpg);
+  background-size: cover;
+  // transform: skewY(-13deg);
+  transform: skewY(-4deg);
+  margin-top: -5.5rem;
+
+  @include respond(tab-port) {
+    margin-top: 0;
+    transform: skewY(0);
+    padding: 10rem;
+  }
+
+  & > * {
+    // transform: skewY(13deg);
+    transform: skewY(4deg);
+
+    @include respond(tab-port) {
+      transform: skewY(0);
+    }
+  }
+
+}
+
+.section-popular-tours {
+  background-color: $grey-light-1;
+  padding: 10rem;
+  margin-top: -5rem;
+  text-align: center;
+}
+
+.section-stories {
+  padding: 10rem;
+  position: relative;
+  @include respond(tab-port) {
+    padding: 5rem;
+  }
+}
+
+.section-booking {
+  padding: 5rem;
+  background-image: linear-gradient(to right bottom, $primary-color-light, $primary-color-dark);
+}
